@@ -22,7 +22,7 @@ const Carosuel = ({items}) => {
   return (
     <Slider {...settings} className='slider'>
       {items.map((item) => {
-        return <div kye={item.id} className='card'>
+        return <div key={item.id} className='card'>
         <div className='inner'>
           <img src={item['img']}/>
           <div className='info'>
