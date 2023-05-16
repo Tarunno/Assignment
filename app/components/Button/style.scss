@@ -1,0 +1,25 @@
+@mixin flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+button{
+  height: 46px;
+  min-width: 102px; 
+  width: fit-content;
+  @include flex-row;
+  font-size: 16px;
+  color:white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.green-btn{
+  background: #4AB449;
+}
+.blue-btn{
+  background: #19ABE3;
+}

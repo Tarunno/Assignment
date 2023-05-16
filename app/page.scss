@@ -1,0 +1,158 @@
+$primary: #092E3D;
+
+.home{
+  color: $primary;
+  min-height: 800px;
+
+  h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .packages-section{
+    margin-top: 35px;
+    h1{
+      text-align: center;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+    }
+  }
+
+  .places{
+    margin-top: 100px;
+    .hero-text{
+      width: 500px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #738187;
+      transform: translate(490px, 70px);
+      margin-top: -70px;
+    }
+    .info{
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .hero-card{
+      width: 465px;
+      height: 445px;
+      background: #E6F8FF;
+      border-radius: 5px;
+      overflow: hidden;
+      img{
+        height: 375px;
+      }
+    }
+  }
+
+  .banner{
+    margin-top: -280px;
+    width: 100%;
+  }
+
+  .mission-vision{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    p{
+      width: 570px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #738187;
+      text-align: center;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+    .mission-vision-cards{
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      padding-top: 30px;
+      width: fit-content;
+      margin: auto;
+      #card-content{
+        display: flex;
+        flex-direction: column;
+        div{
+          padding: 50px 60px;
+        }
+        p{
+          width: 174px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          color: #092E3D;
+        }
+      }
+      .right-card{
+        width: 350px;
+        height: 350px;
+        background: url('/Card.png');
+        padding: 30px;
+      }
+      .left-card{
+        width: 350px;
+        height: 350px;
+        background: url('/Card.png');
+        padding: 30px;
+      }
+      h2{
+        font-weight: 500;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.customer-review{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  p{
+    width: 570px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #738187;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .review-slider{
+    width: 100%;
+    margin-top: 40px;
+    .review-card{
+      width: 100%;
+      background: #E6F8FF;
+      border-radius: 5px;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .review{
+        width: 732px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: -100px;
+        color: #092E3D;
+      }
+      img{
+        transform: translate(-120px, -105px);
+      }
+    }
+  }
+}

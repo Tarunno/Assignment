@@ -1,0 +1,41 @@
+@mixin font-adjustment{
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.0044em;
+  color: #212121;
+}
+
+.trip-options{
+  width: 877px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .trip-destinations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .trip-date-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .primary{
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      font-style: normal;
+      font-family: inherit;
+    }
+    .secondary{
+      @include font-adjustment;
+      color: #738187;
+    }
+    &.true{
+      border-radius: 5px 5px 0px 0px;
+    }
+    .increment-decrement{
+      cursor: pointer;
+    }
+  }
+}

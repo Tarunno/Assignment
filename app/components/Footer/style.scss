@@ -1,0 +1,37 @@
+.footer{
+  min-height: 295px;
+  width: 100%;
+  margin-top: 100px;
+  background: #26ADE2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    display: flex;
+    max-width: 1160px;
+    justify-content: space-between;
+    ul{
+      margin-top: 20px;
+      li{
+        margin-bottom: 10px;
+        list-style: none;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+    section{
+      padding: 30px;
+      flex:1;
+    }
+  }
+  .sec-heading{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .social-icons{
+    display: flex;
+    gap: 10px;
+  }
+}

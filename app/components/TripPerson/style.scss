@@ -1,0 +1,75 @@
+@mixin font-adjustment{
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.0044em;
+  color: #212121;
+}
+.trip-person-container{
+  .trip-person{
+    width: 418px;
+    cursor: pointer;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #4AB449;
+    border-radius: 5px;
+    padding: 10px 20px;
+    .primary{
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .secondary{
+      font-weight: 400;
+      font-size: 16px;
+      color: #738187;
+    }
+  }
+  .menu{
+    position: absolute;
+    z-index: 10;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 418px;
+    padding: 15px 0px;
+    .heading{
+      @include font-adjustment;
+      font-family: 'Poppins', sans-serif;
+      height: 30px;
+      width: 100%;
+      border-bottom: 1px solid #19ABE3;
+    }
+    .sub-menu{
+      padding: 5px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .primary{
+        @include font-adjustment;
+        font-size: 16px;
+      }
+      .secondary{
+        @include font-adjustment;
+      }
+    }
+    .classes{
+      padding: 10px;
+      width: 100%;
+      li{
+        padding: 10px;
+        @include font-adjustment;
+        font-size: 16px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

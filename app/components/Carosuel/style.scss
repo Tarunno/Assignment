@@ -1,0 +1,30 @@
+.slider{
+  transform: translate(480px, -390px);
+  overflow-x: hidden;
+  .card{
+    height: 255px;
+    width: 90%;
+    padding: 10px;
+    .inner{
+      width: 100%;
+      height: fit-content;
+      background: #E6F8FF;
+      border-radius: 5px;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+    }
+  }
+  .slick-next{
+    transform: translate(-565px, -180px);
+  }
+  .slick-prev{
+    transform: translate(600px, -180px);
+  }
+}
+.slick-slider{
+  padding-top: 50px!important;
+}
