@@ -1,2 +1,2 @@
 ### Front-end assignment
-![](GIF/Demo.gif)
+![](Demo.gif)
