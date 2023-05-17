@@ -4,7 +4,6 @@ import './style.scss'
 import {BsTrainFront} from 'react-icons/bs'
 import { useState, useEffect} from 'react'
 import TripOptions from '../TripOptions/TripOptions';
-import Button from '../Button/Button';
 
 const Packages = () => {
 
@@ -82,8 +81,6 @@ const Packages = () => {
         </div>
 
         <TripOptions/>
-        <br/>
-        <Button placeholder={'Search Flights'} type={'blue-btn'} width={'236px'}/>
         <img className='whatsapp-icon' src='./icons/Whatsapp.png'/>
       </div>
     </div>

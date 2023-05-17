@@ -64,6 +64,8 @@ const TripPerson = () => {
         </div>
         :null
       }
+      <input name="Class" value={classes[cls-1]} style={{visibility:'hidden'}}/>
+      <input name="Number of person" value={person} style={{visibility:'hidden'}}/>
     </div>
   )
 }

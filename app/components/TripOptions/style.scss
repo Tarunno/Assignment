@@ -10,16 +10,20 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   .trip-destinations{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 40px;
   }
   .trip-date-class{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 40px;
     .primary{
       font-weight: 500;
       font-size: 16px;

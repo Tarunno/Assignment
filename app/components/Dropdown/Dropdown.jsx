@@ -3,7 +3,7 @@
 import './style.scss'
 import { useState } from "react";
 
-const Dropdown = ({values}) => {
+const Dropdown = ({name, values}) => {
 
   const [active, setActive] = useState(false)
   const [selected, setSelected] = useState(values[0])
@@ -13,13 +13,13 @@ const Dropdown = ({values}) => {
       <div className={'dropdown-container ' + active} 
         onClick={() => setActive(!active)}
       >
-        <p className="primary">Flying From</p>
-        <p className="secondary">City or Airport</p>
+        <p className="primary">{name}</p>
+        <p className="secondary">{selected}</p>
       </div>
       {active?
         <div className='menu'>
-          {values.map((val) => (
-            <p className={
+          {values.map((val, index) => (
+            <p key={index} className={
               selected === val? 'options selected': 'options'
             }
             onClick={() => setSelected(val)}
@@ -28,6 +28,7 @@ const Dropdown = ({values}) => {
         </div>
         :null
       }
+      <input name={name} value={selected.replace('\t', ' ')} style={{visibility:'hidden'}}/>
     </div>
   )
 }
